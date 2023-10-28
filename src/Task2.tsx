@@ -13,7 +13,7 @@ export function Task2() {
         onChange={(e) => setQuery(e.target.value)}
       />
       <p>результат:</p>
-      {query && (
+      {(
         <ul>
           {data.filter(({ name }) =>
             name.toLocaleLowerCase().includes(query.toLocaleLowerCase())
